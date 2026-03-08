@@ -1,0 +1,151 @@
+html{
+	scroll-behavior: smooth;
+}
+
+header{
+
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+}
+
+nav{
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	z-index: 1000;
+	background: black;
+
+	#navimage{
+		width: 130px;
+		height: 130px;
+		margin-left: 10px;
+	}
+	.links{
+		display: flex;
+		gap: 20%;
+		margin-left: 3%;
+	}
+	a{
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+	}
+}
+
+h1{
+	font-size: 50px;
+	color: purple;
+}
+
+body{
+	background-color: black;
+	margin: 0px;
+	font-family: "Red Hat Display", sans-serif;
+
+	.Spotify{
+		display: flex;
+		flex-direction: column;
+		iframe{;
+			box-shadow: 0px 0px 200px purple;
+			margin-left: 20%;
+			z-index: 1;
+		}
+		h2{
+			font-size: 80px;
+			color: white;
+			margin-left: 20%;
+			margin-bottom: 10px;
+			z-index: 2;
+		}
+	}
+	.YouTube{
+		display: flex;
+		flex-direction: column;
+		h2{
+			font-size: 80px;
+			color: white;
+			margin-left: 20%;
+			margin-bottom: 10px;
+			z-index: 2;
+		}
+		img{
+			width: 60%;
+			margin-left: 20%;
+			margin-bottom: 20px;
+			box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
+			border-radius: 20px;
+			overflow: hidden;
+		}
+		.Videos{
+			Margin-left: 20%;
+			Margin-bottom: 500px;
+			border-radius: 20px;
+			overflow: hidden;
+			width: 60%;
+
+			display: flex;
+			gap: 5px;
+
+			box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
+
+			iframe{
+				flex: 1;
+				box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
+			}
+			#ytiframe1{
+				z-index: 1;
+			}
+			#ytiframe2{
+				z-index: 3;
+			}
+			#ytiframe3{
+				z-index: 2;
+			}
+		}
+	}
+	
+}
+
+#Desc1{
+	color: purple;
+	text-align: center;
+}
+#Desc2{
+	color: white;
+	text-align: center;
+}
+
+.h-image-container{
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
+
+.h-image-container img{
+	width: 100%;
+	display: block;
+	height: 600px;
+	object-fit: cover;
+}
+
+.h-image-container::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 350px;
+
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 1));
+}
+
+.red-hat-display-font {
+	font-family: "Red Hat Display", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
