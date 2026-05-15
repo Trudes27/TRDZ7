@@ -25,6 +25,7 @@ nav{
 		width: 130px;
 		height: 130px;
 		margin-left: 10px;
+		margin-right: 10px;
 	}
 	.links{
 		display: flex;
@@ -47,154 +48,153 @@ body{
 	background-color: black;
 	margin: 0px;
 	font-family: "Red Hat Display", sans-serif;
-
-
-/*RELEASES*/
-	.releases{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.bodycontent{		
+		width: 85%;
+		max-width: 1300px;
 		margin: 0 auto;
-		width: 60%;
-		h2{
-			font-size: 80px;
-			color: white;
-			margin-bottom: 10px;
-			margin-top: 100px;
-		}
-		#releases-1{
+		.releases{
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 auto;
 			width: 100%;
-			#release-1{
-				padding: 20px;
-				align-items: center;
-
-				img{
-					border-radius: 40px;
-					width: 100%;
-					min-width: 0;
-				}
-				#r1desc0{
-					color: white;
-					font-size: 20px;
-				}
-				#r1desc1{
-					color: blueviolet;
-				}	
+			h2{
+				font-size: 80px;
+				color: white;
+				margin-bottom: 10px;
+				margin-top: 100px;
 			}
-			#release-2{
-				padding: 20px;
-				align-items: center;
-				img{
-					border-radius: 40px;
-					width: 100%;
-					min-width: 0;
+			#releases-1{
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				.rgroup1{
+					padding: 20px;
+					align-items: center;
+	
+					img{
+						border-radius: 40px;
+						width: 100%;
+						min-width: 0;
+					}
+					.rgroup1desc0{
+						color: white;
+						font-size: 20px;
+					}
+					.rgroup1desc1{
+						color: blueviolet;
+					}
+	
 				}
-				#r2desc0{
-					color: white;
-					font-size: 20px;
-				}
-				#r2desc1{
-					color: blueviolet;
-				}	
-			}
-			#release-3{
-				padding: 20px;
-				align-items: center;
-				img{
-					border-radius: 40px;
-					width: 100%;
-					min-width: 0;
-				}
-				#r3desc0{
-					color: white;
-					font-size: 20px;
-				}
-				#r3desc1{
-					color: blueviolet;
-				}	
-			}
-			#release-1,#release-2,#release-3{
-				flex: 1;
 			}
 		}
-	}
-
-	.Spotify{
-		display: flex;
-		flex-direction: column;
-		iframe{;
-			box-shadow: 0px 0px 200px purple;
-			margin-left: 20%;
-			z-index: 1;
+		#Spotify-section{
+			scroll-margin-top: 50px;
 		}
-		h2{
-			font-size: 80px;
-			color: white;
-			margin-left: 20%;
-			margin-bottom: 10px;
-			z-index: 2;
-			margin-top: 100px;
-		}
-	}
-	.YouTube{
-		display: flex;
-		flex-direction: column;
-		h2{
-			font-size: 80px;
-			color: white;
-			margin-left: 20%;
-			margin-bottom: 10px;
-			z-index: 2;
-			margin-top: 100px;
-		}
-		img{
-			width: 60%;
-			margin-left: 20%;
-			margin-bottom: 5px;
-			box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
-			border-radius: 20px;
-			overflow: hidden;
-			z-index: 5;
-		}
-		.Videos{
-			Margin-left: 20%;
-			Margin-bottom: 500px;
-			border-radius: 20px;
-			overflow: hidden;
-			width: 60%;
-
+		.Spotify{
 			display: flex;
-			gap: 5px;
-
-			box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
-
-			iframe{
-				flex: 1;
-				box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
-			}
-			#ytiframe1{
+			flex-direction: column;
+			max-width: 1500px;
+			iframe{;
+				box-shadow: 0px 0px 200px purple;
+				margin-left: 0;
 				z-index: 1;
 			}
-			#ytiframe2{
-				z-index: 3;
-			}
-			#ytiframe3{
+			h2{
+				font-size: 80px;
+				color: white;
+				margin-left: 0%;
+				margin-bottom: 10px;
 				z-index: 2;
+				margin-top: 100px;
+			}
+		}
+		.YouTube{
+			display: flex;
+			flex-direction: column;
+			h2{
+				font-size: 80px;
+				color: white;
+				margin-bottom: 10px;
+				z-index: 2;
+				margin-top: 100px;
+			}
+			img{
+				width: 100%;
+				margin-bottom: 5px;
+				box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
+				border-radius: 20px;
+				overflow: hidden;
+				z-index: 5;
+			}
+			.Videos{
+				Margin-left: 0%;
+				Margin-bottom: 250px;
+				border-radius: 20px;
+				overflow: hidden;
+				width: 100%;
+	
+				display: flex;
+				gap: 5px;
+	
+				box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
+	
+				iframe{
+					flex: 1;
+					box-shadow: 0px 0px 100px rgba(150, 0, 0, 50);
+					aspect-ratio: 16/9;
+					width: 30%;
+					height: auto;
+				}
+				#ytiframe1{
+					z-index: 1;
+				}
+				#ytiframe2{
+					z-index: 3;
+				}
+				#ytiframe3{
+					z-index: 2;
+				}
+			}
+		}
+		footer{
+			height: 100px;
+			color: white;
+			display: flex;
+			align-items: center;
+			z-index: 1000;
+			background: black;
+			margin-bottom: 20px;
+			#copyright{
+				font-size: 12px;
 			}
 		}
 	}
-	
+	#bottomtext{
+		color: #333333;
+		font-size: 14px;
+	}
 }
 
 #Desc1{
 	color: purple;
 	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 #Desc2{
 	color: white;
 	text-align: center;
+	margin-left: 0%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 16px;
+}
+
+@media(max-width: 768px){
+	#Desc2{
+		font-size: 20px;
+	}
 }
 
 .h-image-container{
@@ -228,9 +228,4 @@ body{
 	font-optical-sizing: auto;
 	font-weight: 500;
 	font-style: normal;
-}
-
-footer{
-	height: 200px;
-	color: white;
 }
