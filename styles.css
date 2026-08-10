@@ -71,6 +71,7 @@ body{
 				.rgroup1{
 					padding: 20px;
 					align-items: center;
+					flex: 1;
 	
 					img{
 						border-radius: 40px;
@@ -156,6 +157,11 @@ body{
 					z-index: 2;
 				}
 			}
+			.p{
+				/* FOR OTHER PAGES */
+				color: white;
+				font-size: 16px;
+			}
 		}
 		footer{
 			height: 100px;
@@ -165,8 +171,16 @@ body{
 			z-index: 1000;
 			background: black;
 			margin-bottom: 20px;
+			justify-content: space-between;
+			box-shadow: 0px 0px 0px blueviolet;
+
 			#copyright{
 				font-size: 12px;
+			}
+			a{
+				color: violet;
+				font-size: 16px;
+				text-decoration: none;
 			}
 		}
 	}
